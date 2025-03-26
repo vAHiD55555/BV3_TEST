@@ -1,6 +1,7 @@
 name: Build Obfuscate BPB Panel
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - main
