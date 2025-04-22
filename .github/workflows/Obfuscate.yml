@@ -34,7 +34,7 @@ jobs:
           
           links=$(curl -s https://api.github.com/repos/bia-pain-bache/BPB-Worker-Panel/releases/latest | grep browser_download_url | cut -d'"' -f4 |grep -E 'unobfuscated-worker.js$')
           echo "${links}"
-          wget -O origin.js "$links"
+        # wget -O origin.js "$links"
         
       - name: Obfuscate BPB worker js
         run: |
